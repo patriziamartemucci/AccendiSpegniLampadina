@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accendispegnilampadina.AccendiSpegniLampadinaController">
+   <children>
+      <Button fx:id="btnAccendiSpegni" layoutX="268.0" layoutY="257.0" mnemonicParsing="false" onAction="#gestioneClick" text="Accendi" />
+      <ImageView fx:id="imgLampadina" fitHeight="150.0" fitWidth="200.0" layoutX="254.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./spenta.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
