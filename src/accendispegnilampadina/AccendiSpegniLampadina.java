@@ -22,7 +22,7 @@ public class AccendiSpegniLampadina extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("AccendiSpegniLampadina.fxml"));
         primaryStage.setTitle("Mostra/Nascondi etichetta");
         primaryStage.setScene(new Scene(root));
-        primaryStage.show();
+        primaryStage.show();//la solita
     }
 
 
