@@ -34,11 +34,11 @@ public class AccendiSpegniLampadinaController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         accesa=false;//la lampadina è spenta
-        /*
+        
         File file = new File("spenta.png");
         Image image1 = new Image(file.toURI().toString());
         imgLampadina.setImage(image1);
-*/
+
     }    
     public void gestioneClick(ActionEvent event){
         if(accesa){
