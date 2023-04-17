@@ -33,7 +33,7 @@ public class AccendiSpegniLampadinaController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        accesa=false//la lampadina è spenta
+        accesa=false;//la lampadina è spenta
         /*
         File file = new File("spenta.png");
         Image image1 = new Image(file.toURI().toString());
