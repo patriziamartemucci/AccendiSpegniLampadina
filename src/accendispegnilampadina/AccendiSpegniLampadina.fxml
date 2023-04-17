@@ -13,5 +13,6 @@
             <Image url="@./spenta.png" />
          </image>
       </ImageView>
+      
    </children>
 </AnchorPane>
