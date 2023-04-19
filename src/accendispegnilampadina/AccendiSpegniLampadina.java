@@ -24,7 +24,7 @@ public class AccendiSpegniLampadina extends Application {
         primaryStage.setScene(new Scene(root));
         primaryStage.show();//la solita
     }
-
+//commento per provare il commit/push
 
     public static void main(String[] args) {
         launch(args);
