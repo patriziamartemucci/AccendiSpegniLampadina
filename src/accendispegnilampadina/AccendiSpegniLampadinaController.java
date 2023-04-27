@@ -25,6 +25,10 @@ public class AccendiSpegniLampadinaController implements Initializable {
     private ImageView imgLampadina;
     @FXML
     private Button btnAccendiSpegni;
+    @FXML
+    private Button btnSpostaDX;
+     @FXML
+    private Button btnSpostaSX;
     private boolean accesa;
             
     /**
@@ -41,18 +45,26 @@ public class AccendiSpegniLampadinaController implements Initializable {
 
     }    
     public void gestioneClick(ActionEvent event){
-        if(accesa){
-            File file = new File("spenta.png");
-            Image image1 = new Image(file.toURI().toString());
-            imgLampadina.setImage(image1);
-            accesa=!accesa;
-            btnAccendiSpegni.setText("Accendi");
+        Object oggetto=event.getSource();
+        if(oggetto==btnAccendiSpegni){
+            if(accesa){
+                File file = new File("spenta.png");
+                Image image1 = new Image(file.toURI().toString());
+                imgLampadina.setImage(image1);
+                accesa=!accesa;
+                btnAccendiSpegni.setText("Accendi");
+            }else{
+                File file = new File("accesa.png");
+                Image image1 = new Image(file.toURI().toString());
+                imgLampadina.setImage(image1);
+                accesa=!accesa;
+                btnAccendiSpegni.setText("Spegni");
+            }
+        }else if(oggetto==this.btnSpostaDX){
+            imgLampadina.setX(imgLampadina.getX()+10);
+            //imgLampadina.setY(imgLampadina.getY()-10);
         }else{
-            File file = new File("accesa.png");
-            Image image1 = new Image(file.toURI().toString());
-            imgLampadina.setImage(image1);
-            accesa=!accesa;
-            btnAccendiSpegni.setText("Spegni");
+            imgLampadina.setX(imgLampadina.getX()-10);
         }
     }
     
